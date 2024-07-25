@@ -1,5 +1,6 @@
 package distribuicoes;
 
 public abstract class Distribuicao {
-    abstract float[] gerarValores(int qtd);
+    abstract public double[] gerarValores(int qtd);
+    abstract public double[] getRandomlyGeneratedInput();
 }
