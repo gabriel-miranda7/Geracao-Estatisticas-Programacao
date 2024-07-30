@@ -17,6 +17,7 @@ public class DistribuicaoUniforme extends Distribuicao {
             return this.entrada;
         return null;
     }
+
     /**
      * @param qtd um inteiro será a quantidade de números de entrada
      * @return Retorna a o array outputs com as saídas da distribuição uniforme
@@ -45,18 +46,19 @@ public class DistribuicaoUniforme extends Distribuicao {
         return outputs;
 
     }
+
     /**
      * @return Retorna a média da distribuição uniforme
      */
     public double gerarMedia() {
-        return (a+b/2);
+        return (a + b / 2);
     }
 
     /**
      * @return Retorna a variância da distribuição uniforme
      */
     public double gerarVariancia() {
-        double desvioPadrao = (b-a)/Math.sqrt(12);
+        double desvioPadrao = (b - a) / Math.sqrt(12);
         return Math.pow(desvioPadrao, 2);
     }
 }
