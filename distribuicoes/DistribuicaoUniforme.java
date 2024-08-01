@@ -26,8 +26,8 @@ public class DistribuicaoUniforme extends Distribuicao {
         double[] arr = new double[qtd]; // Cria array de doubles
         Random rand = new Random(); // Cria instâncida de Random
 
-        int limiteinferior = 1000;
-        int limitesuperior = -1000;
+        int limiteinferior = (int) a;
+        int limitesuperior = (int) b;
 
         for (int i = 0; i < qtd; i++) {
             arr[i] = limiteinferior + rand.nextDouble() * (limitesuperior - limiteinferior); // Atribui ao array valores
